@@ -1,2 +1,41 @@
+bg-color = #08141E
+bg-image-width = 657px
+bg-image-height = 408px
+text-color = #ffffff
+
+footer-height = 120px
+footer-text-color = #43494f
+footer-padding = 0 60px
+
+html
+  position relative
+  min-height 100%
+
 body
-  background-color #0086b3
+  background-color bg-color
+  color text-color
+  margin-bottom footer-height
+
+.container
+  position relative
+
+.bg-image
+  z-index 0
+  position absolute
+  right 0
+  background-image url(../images/simple.png)
+  background-repeat no-repeat
+  background-size contain
+  width 100%
+  max-width bg-image-width
+  height bg-image-height
+
+footer
+  position absolute
+  padding footer-padding
+  bottom 0
+  width 100%
+  height footer-height
+  line-height footer-height
+  color footer-text-color
+  font-weight 600

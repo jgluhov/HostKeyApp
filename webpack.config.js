@@ -36,7 +36,7 @@ module.exports = {
 				loader: ExtractTextPlugin.extract('style','css!stylus')
 			},
 			{
-				test: /\.(ttf|woff|woff2|eot|svg)$/,
+				test: /\.(ttf|woff|woff2|eot|svg|png)$/,
 				loader: 'file?name=./fonts/[name].[ext]'
 			}
 		]
