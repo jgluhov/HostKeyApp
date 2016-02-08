@@ -35,11 +35,15 @@ module.exports = {
 			{
 				test: /\.styl$/,
 				exclude: /node_modules/,
-				loader: ExtractTextPlugin.extract('style','css!stylus')
+				loader: ExtractTextPlugin.extract('style','css!stylus?resolve url')
 			},
 			{
-				test: /\.(ttf|woff|woff2|eot|svg|png)$/,
+				test: /\.(ttf|woff|woff2|eot|svg)$/,
 				loader: 'file?name=./fonts/[name].[ext]'
+			},
+			{
+				test: /\.(png)$/,
+				loader: 'file?name=[path][name].[ext]'
 			}
 		]
 	},

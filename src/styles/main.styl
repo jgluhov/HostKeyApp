@@ -29,9 +29,13 @@ body
   color text-color
   margin-bottom footer-height
   -webkit-font-smoothing antialiased
+  overflow-x hidden
 
 main
   position relative
+  .container
+    transition width 0.5s
+    -webkit-transition width 0.5s
 
 article
   > h1
@@ -44,7 +48,8 @@ article
 header
   margin header-margin
   padding header-padding
-  margin-bottom 60px
+  transition margin 1s
+
   .nav li
     a
       color nav-text-color
@@ -74,6 +79,7 @@ footer
   line-height footer-height
   color footer-text-color
   font-weight 600
+  transition padding 1s
 
 +media-query( all, max-width 860px )
   header

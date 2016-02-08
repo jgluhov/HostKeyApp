@@ -3,5 +3,3 @@
  */
 import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../styles/main.styl';
-
-console.log(`Hellosss`);
