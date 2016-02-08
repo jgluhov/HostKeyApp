@@ -3,7 +3,9 @@
  */
 
 var HtmlWebpackPlugin = require('html-webpack-plugin'),
-	ExtractTextPlugin = require("extract-text-webpack-plugin");
+	ExtractTextPlugin = require("extract-text-webpack-plugin"),
+	koutoSwiss = require('kouto-swiss');
+
 
 module.exports = {
 	context: __dirname + '/src',
@@ -48,5 +50,9 @@ module.exports = {
 		new ExtractTextPlugin("./css/styles.css", {
 			disable: process.env.NODE_ENV == 'development'
 		})
-	]
+	],
+	stylus: {
+		use: [koutoSwiss()],
+		import: ['~kouto-swiss/index.styl']
+	}
 };

@@ -4,8 +4,21 @@ bg-image-height = 408px
 text-color = #ffffff
 
 footer-height = 120px
-footer-text-color = #43494f
+footer-text-color = #5a6167
 footer-padding = 0 60px
+footer-padding-media = 0 15px
+
+header-padding = 0 60px
+header-margin = 80px 0 60px 0
+header-margin-media = 15px 0 15px 0
+header-padding-media = 0 15px
+
+nav-text-color = #B1BBCB
+nav-text-hover-color = #d6e3f3
+
+article-max-width = 760px
+article-heading-font-size = 40px
+article-heading-font-size-media = 30px
 
 html
   position relative
@@ -15,9 +28,31 @@ body
   background-color bg-color
   color text-color
   margin-bottom footer-height
+  -webkit-font-smoothing antialiased
 
-.container
+main
   position relative
+
+article
+  > h1
+      font-size article-heading-font-size
+      font-weight 600
+  > p
+      max-width article-max-width
+      font-weight 500
+
+header
+  margin header-margin
+  padding header-padding
+  margin-bottom 60px
+  .nav li
+    a
+      color nav-text-color
+      font-weight 600
+      &:focus, &:hover
+        background-color transparent
+        color nav-text-hover-color
+        text-shadow 2px 2px 7px rgba(150, 150, 150, 1)
 
 .bg-image
   z-index 0
@@ -39,3 +74,15 @@ footer
   line-height footer-height
   color footer-text-color
   font-weight 600
+
++media-query( all, max-width 860px )
+  header
+    margin header-margin-media
+    padding header-padding-media
+
+  article
+    > h1
+      font-size article-heading-font-size-media
+
+  footer
+    padding footer-padding-media

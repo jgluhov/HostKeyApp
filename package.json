@@ -29,6 +29,7 @@
     "html-webpack-plugin": "^2.8.1",
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
+    "kouto-swiss": "^0.11.14",
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.1",
     "webpack": "^1.12.13"
