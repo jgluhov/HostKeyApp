@@ -4,6 +4,7 @@
   "description": "HostKey App",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "./node_modules/.bin/webpack .",
     "test": "NODE_ENV=development webpack-dev-server --inline"
   },
   "repository": {
