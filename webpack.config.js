@@ -14,6 +14,7 @@ module.exports = {
 	},
 	output: {
 		path: __dirname + '/public',
+		publicPath: '/',
 		filename: './js/bundle.js'
 	},
 	module: {
@@ -35,15 +36,15 @@ module.exports = {
 			{
 				test: /\.styl$/,
 				exclude: /node_modules/,
-				loader: ExtractTextPlugin.extract('style','css!stylus?resolve url')
+				loader: ExtractTextPlugin.extract('style','css!stylus')
 			},
 			{
-				test: /\.(ttf|woff|woff2|eot|svg)$/,
+				test: /\.(ttf|woff|woff2|eot|svg|map)$/,
 				loader: 'file?name=./fonts/[name].[ext]'
 			},
 			{
 				test: /\.(png)$/,
-				loader: 'file?name=[path][name].[ext]'
+				loader: 'file?name=./[path][name].[ext]'
 			}
 		]
 	},
