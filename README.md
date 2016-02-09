@@ -1,6 +1,6 @@
 # HostKeyApp
 
-# How to:
+### How to:
 
 1. You should **install NodeJS** (if it doesn't install until now on your computer)
     It can be done by downloading it from official site: **https://nodejs.org/en/**.
@@ -11,7 +11,7 @@
 5. Type in console command **"live-server"** and you should see a favorite browser opened.
 6. Enjoy.
 
-## License 
+### License 
 **MIT Licensing**
 	<p>Copyright (c) 2016</p>
 	<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this 
